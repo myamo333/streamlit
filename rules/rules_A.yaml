@@ -1,0 +1,11 @@
+# チェックルールの定義
+check_whitespace: true
+check_forbidden_characters: true
+forbidden_characters:
+  - "&"
+  - "|"
+check_syntax: true
+check_specific_syntax: true
+correct_syntax:
+  - pattern: '{"key": "value"}'
+  - pattern: '\[1, 2, 3\]'

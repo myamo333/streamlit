@@ -1,0 +1,20 @@
+# チェックルールの定義
+rules:
+  # 空白のチェック
+  check_whitespace: true
+  # 禁止文字のチェック
+  check_forbidden_characters: true
+  forbidden_characters:
+    - "&"
+    - "|"
+    # 他の禁止文字を追加する場合はここに追加します
+
+  # 特定の構文で書かれているかのチェック
+  check_syntax: true
+  # 特定の構文が使われている場合のチェック
+  check_specific_syntax: true
+  # 適切な構文が使われているかのチェック
+  correct_syntax:
+    # 正しい構文パターンを指定します
+    - pattern: '{"key": "value"}'
+    - pattern: '\[1, 2, 3\]'
